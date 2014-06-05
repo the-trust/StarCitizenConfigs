@@ -1,0 +1,31 @@
+<!-- Warthog Joystick + HOTAS mapping -->
+<ActionMaps version="0" >
+ 	<actionmap name="spaceship_view">
+		<action name="v_view_yaw_left">
+			<rebind device="joystick" input="js1_hat1_right" />
+		</action>		
+		<action name="v_view_yaw_right">
+			<rebind device="joystick" input="js1_hat1_left" />
+		</action>
+		<action name="v_view_pitch_up">
+			<rebind device="joystick" input="js1_hat1_up" />
+		</action>		
+		<action name="v_view_pitch_down">
+			<rebind device="joystick" input="js1_hat1_down" />
+		</action>
+		<action name="v_view_cycle_fwd">
+			<rebind device="joystick" input="js1_button9" />
+		</action>
+		<action name="v_view_dynamic_focus_toggle">
+			<rebind device="joystick" input="js1_button7" />
+		</action>			
+	</actionmap>
+	<actionmap name="spaceship_movement">
+		<action name="v_yaw">
+			<rebind device="joystick" input="js1_x" />
+		</action>		
+		<action name="v_roll">
+			<rebind device="joystick" input="js1_rotz" />
+		</action>
+	</actionmap>
+</ActionMaps>

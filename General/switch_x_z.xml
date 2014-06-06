@@ -1,0 +1,11 @@
+<!-- Warthog Joystick + HOTAS mapping -->
+<ActionMaps version="0" >
+	<actionmap name="spaceship_movement">
+		<action name="v_yaw">
+			<rebind device="joystick" input="js1_x" />
+		</action>		
+		<action name="v_roll">
+			<rebind device="joystick" input="js1_rotz" />
+		</action>
+	</actionmap>
+</ActionMaps>

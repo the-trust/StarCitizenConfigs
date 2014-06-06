@@ -1,4 +1,4 @@
-Save the dile switch_x_z.xml to disk (ex: c:\tmp)
+Save the file switch_x_z.xml to disk (ex: c:\tmp)
 
 Enter to ingame console: 
 

@@ -1,0 +1,103 @@
+// CMS Script File
+//
+//     Game Title:
+//     Written By:
+//           Date:
+//
+%define doneFirst           b1
+%define mode2Button					js2.b4
+%define mode3Button					js2.b3
+
+script
+ 	if(not doneFirst) then
+ 		doneFirst=true;
+ 		currentMode=MODE1;
+ 	endif
+
+ 	// Mode1 is the normaly active mode
+ 	// Mode2 is active while button 4 but not button 3 on the
+ 	//       throttle is depressed.
+ 	// Mode3 is active while button 3 but not button 4 on the
+ 	//       throttle is depressed
+ 	// Mode4 is entered while button 3 and button 4 on the
+ 	//       throttle are both depressed. 	
+ 	if(mode2Button && mode3Button) then
+ 		currentMode=MODE4;
+ 	else
+ 		if(mode2Button) then
+ 			currentMode=MODE2;
+ 		else
+ 			if(mode3Button) then
+ 				currentMode=MODE3;
+ 			else
+ 				if(not mode2Button && not mode3Button) then
+ 					currentMode=MODE1;
+ 				endif
+ 			endif
+ 		endif
+ 	endif
+
+%define doneFirstTrigger	b10
+%define Group1 		b11
+%define Group2 		b12
+%define Group3 		b13
+%define Group12		b14
+
+
+if(not doneFirstTrigger) then
+ 		doneFirstTrigger=true;
+ 		Group1=TRUE;
+ 		Group2=FALSE;
+ 		Group3=FALSE;
+endif
+
+if (JS1.B13) then
+   	Group1=TRUE;
+ 		Group2=FALSE;
+ 		Group3=FALSE;
+else
+   if (JS1.B14) then
+      Group1=FALSE;
+      Group2=TRUE;
+      Group3=FALSE;
+   else
+      if (JS1.B15) then
+          Group1=FALSE;
+       		Group2=FALSE;
+       		Group3=TRUE;
+      else
+        if (JS1.B16) then
+            Group1=TRUE;
+         		Group2=TRUE;
+         		Group3=FALSE;
+        endif
+      endif
+   endif
+endif
+
+
+if(JS1.B1) then
+   if (Group1 && Group2) then
+      CMS.B1=TRUE;
+      CMS.B2=TRUE;
+   else
+      if (Group1) then
+          CMS.B1=TRUE;
+      else
+        if (Group2) then
+          CMS.B2=TRUE;
+        else
+          if (Group3) then
+            CMS.B3=TRUE;
+          endif
+        endif
+      endif
+   endif
+else
+  CMS.B1=FALSE;
+  CMS.B2=FALSE;
+  CMS.B3=FALSE;
+endif
+
+endScript
+

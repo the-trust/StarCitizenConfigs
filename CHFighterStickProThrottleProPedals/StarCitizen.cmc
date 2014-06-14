@@ -1,0 +1,60 @@
+countermeasures		z
+countermeasures_next	x
+
+
+target_next_enemy	t
+target_next_friendly	h	
+target_next		y
+target_nearest_enemy	r
+target_pin		g
+radar_focus_next	j
+radar_focus_prev	k
+radar_zoom		,
+
+match_speed		m
+
+lights_toggle		null o
+eject           RALT l
+
+HUD_mode_next		#
+HUD_mode_prev		#
+HUD_select		ENT
+HUD_left		null KBLEFT
+HUD_right		null KBRIGHT
+HUD_up			null KBUP
+HUD_down		null KBDOWN
+
+UI_overview		F1
+UI_weapons		F2
+UI_power		F3
+UI_shields		F4
+
+headlook_toggle		null TAB
+afterburner		LSHF
+
+flightmode_toggle	null CAPS
+relativemode_toggle	null CTL f
+safety_toggle		null CTL CAPS
+
+trans_up		e
+trans_down		q
+trans_left		a
+trans_right		d
+trans_fore		w
+trans_aft		s
+
+goback			ESC
+interact		f
+console			'
+
+camera_next		KBINS
+viewmode_toggle		null KBPGUP
+
+shield_move_front	RCTL KP8
+shield_move_back	RCTL KP2
+shield_move_left	RCTL KP4
+shield_move_right	RCTL KP6
+shield_move_mid   RCTL KP5
+
+
+

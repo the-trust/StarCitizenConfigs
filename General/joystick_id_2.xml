@@ -1,0 +1,63 @@
+<!-- 13.06.2014 18:48:33 - SC Joystick Mapping -->
+<ActionMaps version="0" js1="vJoy Device" js2="Logitech G25 Racing Wheel USB" js2="Thrustmaster Virtual Game Controller (root)">
+	<actionmap name="spaceship_general">
+	</actionmap>
+
+	<actionmap name="spaceship_view">
+	</actionmap>
+
+	<actionmap name="spaceship_movement">
+		<action name="v_pitch">
+			<rebind device="joystick" input="js2_y" />
+		</action>
+		<action name="v_yaw">
+			<rebind device="joystick" input="js2_x" />
+		</action>
+		<action name="v_roll">
+			<rebind device="joystick" input="js2_rotz" />
+		</action>
+		<action name="v_throttle">
+			<rebind device="joystick" input="js2_throttlez" />
+		</action>
+		<action name="v_target_match_vel">
+			<rebind device="joystick" input="js2_button8" />
+		</action>
+	</actionmap>
+
+	<actionmap name="spaceship_targeting">
+	</actionmap>
+
+	<actionmap name="spaceship_weapons">
+		<action name="v_attack1_group1">
+			<rebind device="joystick" input="js2_button1" />
+		</action>
+		<action name="v_attack1_group2">
+			<rebind device="joystick" input="js2_button2" />
+		</action>
+		<action name="v_attack1_group3">
+			<rebind device="joystick" input="js2_button3" />
+		</action>
+		<action name="v_attack1_group4">
+			<rebind device="joystick" input="js2_button4" />
+		</action>
+	</actionmap>
+
+	<actionmap name="spaceship_missiles">
+	</actionmap>
+
+	<actionmap name="spaceship_defensive">
+	</actionmap>
+
+	<actionmap name="spaceship_auto_weapons">
+	</actionmap>
+
+	<actionmap name="spaceship_radar">
+	</actionmap>
+
+	<actionmap name="spaceship_hud">
+	</actionmap>
+
+	<actionmap name="zero_gravity_general">
+	</actionmap>
+
+</ActionMaps>

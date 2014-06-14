@@ -1,13 +1,40 @@
-<!-- 13.06.2014 18:48:33 - SC Joystick Mapping -->
+<!-- 15.06.2014 00:33:06 - SC Joystick Mapping -->
 <ActionMaps version="0" js1="vJoy Device" js2="Logitech G25 Racing Wheel USB" js3="Thrustmaster Virtual Game Controller (root)">
 	<actionmap name="spaceship_general">
 	</actionmap>
 
 	<actionmap name="spaceship_view">
+		<action name="v_view_yaw_left">
+			<rebind device="joystick" input="js3_hat1_right" />
+		</action>
+		<action name="v_view_yaw_right">
+			<rebind device="joystick" input="js3_hat1_left" />
+		</action>
+		<action name="v_view_yaw">
+			<rebind device="joystick" input="js1_rotx" />
+		</action>
+		<action name="v_view_pitch_up">
+			<rebind device="joystick" input="js3_hat1_up" />
+		</action>
+		<action name="v_view_pitch_down">
+			<rebind device="joystick" input="js3_hat1_down" />
+		</action>
+		<action name="v_view_pitch">
+			<rebind device="joystick" input="js1_roty" />
+		</action>
+		<action name="v_view_cycle_fwd">
+			<rebind device="joystick" input="js3_button9" />
+		</action>
+		<action name="v_view_dynamic_focus_toggle">
+			<rebind device="joystick" input="js3_button7" />
+		</action>
 	</actionmap>
 
 	<actionmap name="spaceship_movement">
 		<action name="v_pitch">
+			<rebind device="joystick" input="js3_y" />
+		</action>
+		<action name="v_pitch_flightstick">
 			<rebind device="joystick" input="js3_y" />
 		</action>
 		<action name="v_yaw">
@@ -21,6 +48,12 @@
 		</action>
 		<action name="v_target_match_vel">
 			<rebind device="joystick" input="js3_button8" />
+		</action>
+		<action name="v_newtonian_yaw">
+			<rebind device="joystick" input="js3_x" />
+		</action>
+		<action name="v_newtonian_pitch">
+			<rebind device="joystick" input="js3_y" />
 		</action>
 	</actionmap>
 

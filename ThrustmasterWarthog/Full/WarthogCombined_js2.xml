@@ -5,55 +5,49 @@
 
 	<actionmap name="spaceship_view">
 		<action name="v_view_yaw_left">
-			<rebind device="joystick" input="js3_hat1_right" />
+			<rebind device="joystick" input="js2_hat1_right" />
 		</action>
 		<action name="v_view_yaw_right">
-			<rebind device="joystick" input="js3_hat1_left" />
-		</action>
-		<action name="v_view_yaw">
-			<rebind device="joystick" input="js1_rotx" />
-		</action>
+			<rebind device="joystick" input="js2_hat1_left" />
+		</action>		
 		<action name="v_view_pitch_up">
-			<rebind device="joystick" input="js3_hat1_up" />
+			<rebind device="joystick" input="js2_hat1_up" />
 		</action>
 		<action name="v_view_pitch_down">
-			<rebind device="joystick" input="js3_hat1_down" />
-		</action>
-		<action name="v_view_pitch">
-			<rebind device="joystick" input="js1_roty" />
+			<rebind device="joystick" input="js2_hat1_down" />
 		</action>
 		<action name="v_view_cycle_fwd">
-			<rebind device="joystick" input="js3_button9" />
+			<rebind device="joystick" input="js2_button9" />
 		</action>
 		<action name="v_view_dynamic_focus_toggle">
-			<rebind device="joystick" input="js3_button7" />
+			<rebind device="joystick" input="js2_button7" />
 		</action>
 	</actionmap>
 
 	<actionmap name="spaceship_movement">
 		<action name="v_pitch">
-			<rebind device="joystick" input="js3_y" />
+			<rebind device="joystick" input="js2_y" />
 		</action>
 		<action name="v_pitch_flightstick">
-			<rebind device="joystick" input="js3_y" />
+			<rebind device="joystick" input="js2_y" />
 		</action>
 		<action name="v_yaw">
-			<rebind device="joystick" input="js3_x" />
+			<rebind device="joystick" input="js2_x" />
 		</action>
 		<action name="v_roll">
-			<rebind device="joystick" input="js1_rotz" />
+			<rebind device="joystick" input="js2_rotz" />
 		</action>
 		<action name="v_throttle">
-			<rebind device="joystick" input="js3_throttlez" />
+			<rebind device="joystick" input="js2_throttlez" />
 		</action>
 		<action name="v_target_match_vel">
-			<rebind device="joystick" input="js3_button8" />
+			<rebind device="joystick" input="js2_button8" />
 		</action>
 		<action name="v_newtonian_yaw">
-			<rebind device="joystick" input="js3_x" />
+			<rebind device="joystick" input="js2_x" />
 		</action>
 		<action name="v_newtonian_pitch">
-			<rebind device="joystick" input="js3_y" />
+			<rebind device="joystick" input="js2_y" />
 		</action>
 	</actionmap>
 
@@ -62,16 +56,16 @@
 
 	<actionmap name="spaceship_weapons">
 		<action name="v_attack1_group1">
-			<rebind device="joystick" input="js3_button1" />
+			<rebind device="joystick" input="js2_button1" />
 		</action>
 		<action name="v_attack1_group2">
-			<rebind device="joystick" input="js3_button2" />
+			<rebind device="joystick" input="js2_button2" />
 		</action>
 		<action name="v_attack1_group3">
-			<rebind device="joystick" input="js3_button3" />
+			<rebind device="joystick" input="js2_button3" />
 		</action>
 		<action name="v_attack1_group4">
-			<rebind device="joystick" input="js3_button4" />
+			<rebind device="joystick" input="js2_button4" />
 		</action>
 	</actionmap>
 

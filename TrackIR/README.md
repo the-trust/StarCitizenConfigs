@@ -1,5 +1,5 @@
 Based on the superb work from sgtflyer on the RSI forums: https://forums.robertsspaceindustries.com/discussion/comment/2801458/#Comment_2801458
-The his thread for more information!
+See his thread for more information!
 
 Mini-Tutorial:
 
@@ -20,7 +20,7 @@ Mini-Tutorial:
 8) Launch StarCitizen, run the command to load the provided action maps: pp_rebindkeys
 "x:/path/to/StarCitizen_TrackIR_ActionMaps.xml"
 
-9) Since vjoy probably runs ans js_1, it should work now.
+9) Since vjoy probably runs as js_1, it should work now.
 
 
 
